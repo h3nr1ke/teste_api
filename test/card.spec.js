@@ -4,7 +4,7 @@
  * @see https://magicthegathering.io/
  *
  * Este exemplo faz parte de um post no medium
- * @see  <MEDIUM URL>
+ * @see https://medium.com/@hdeodato/teste-autom%C3%A1tico-de-api-rest-usando-com-node-js-mocha-chai-6aec4613d100
  *
  * @author Henrique Deodato
  * @see twitter.com/hdeodato
@@ -40,7 +40,7 @@ describe("Teste API magicthegathering.io",function(){
         }
 
         // utilizando a funcao expect do chai, vamos verificar se o resultado da chamada foi sucesso (200)
-        expect(response.statusCode).to.equal(200);
+        expect(response.statusCode).to.equal(400);
 
         // agora, verificamos se retornou a propriedade cards
         if( _body.should.have.property('cards') ){
